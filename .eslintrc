@@ -1,0 +1,64 @@
+{
+  "parser": "babel-eslint",
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "blockBindings": true,
+      "classes": true,
+      "modules": true,
+      "templateStrings": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+
+  "extends": ["airbnb"],
+
+  "globals": {
+    "console": true
+  },
+
+  "plugins": [],
+
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+
+  "rules": {
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
+    "operator-linebreak": ["error", "after"], // because of prettier
+    "react/jsx-one-expression-per-line": true,
+    "arrow-parens": ["error", "as-needed"],
+    "react/sort-comp": [1, {
+      "order": [
+        "constructor",
+        "lifecycle",
+        "everything-else",
+        "render"
+      ]
+    }],
+    "class-methods-use-this": ["off"]
+  }
+}

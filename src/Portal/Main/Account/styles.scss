@@ -1,0 +1,10 @@
+.menuCol {
+  width: 100%;
+  @media (min-width: 200px) {
+    width: 200px;
+  }
+}
+
+.pageCol {
+  flex-grow: 1;
+}
