@@ -1,6 +1,18 @@
-.override-active-listgroupitem-color .list-group-item.active {
-  z-index: 2;
-  color: #fff;
-  background-color: #c3e6cb;
-  border-color: #c3e6cb;
+.override-listgroupitem-color {
+
+  .list-group-item.active {
+    background-color: #90da90;
+    border-color: #90da90;
+  }
+
+  .list-group-item {
+    z-index: 2;
+    color: #343a40;
+  }
+
+  .list-group-item a {
+    z-index: 2;
+    color: #343a40;
+    text-decoration: none;
+  }
 }

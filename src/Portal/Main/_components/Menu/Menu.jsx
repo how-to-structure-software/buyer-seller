@@ -11,7 +11,7 @@ import './styles.scss';
 
 const Menu = ({ pathname }) => (
   <div className="">
-    <ListGroup className="override-active-listgroupitem-color">
+    <ListGroup className="override-listgroupitem-color">
       {pathname === ACCOUNT ?
         <ListGroupItem active>My Account</ListGroupItem> :
         <ListGroupItem><Link to={ACCOUNT}>My Account</Link></ListGroupItem>

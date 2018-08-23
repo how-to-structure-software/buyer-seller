@@ -40,8 +40,8 @@ const SignInForm = ({
       <Button className="float-right">Sign in</Button>
     </div>
     <div className="float-right">
-      <button className="btn btn-link btn-sm" type="button" onClick={loginAsDemoBuyer}>Demo Buyer</button>
-      <button className="btn btn-link btn-sm" type="button" onClick={loginAsDemoSeller}>Demo Seller</button>
+      <button className="btn btn-link btn-sm text-dark" type="button" onClick={loginAsDemoBuyer}><u>Demo Buyer</u></button>
+      <button className="btn btn-link btn-sm text-dark" type="button" onClick={loginAsDemoSeller}><u>Demo Seller</u></button>
     </div>
     {error && <Alert className="d-block mt-2" color="secondary">{error}</Alert>}
   </Form>
