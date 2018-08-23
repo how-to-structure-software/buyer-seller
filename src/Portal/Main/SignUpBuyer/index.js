@@ -1,3 +1,3 @@
-import SignUpForm from './SignUpFormEnhanced';
+import Controller from './Controller';
 
-export default SignUpForm;
+export default Controller;

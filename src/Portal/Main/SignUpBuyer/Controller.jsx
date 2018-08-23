@@ -3,21 +3,19 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import { auth, firestore } from '../../../Provider/Firebase';
-import SignUpForm from './SignUpForm';
+import View from './View';
 import { ACCOUNT } from '../../../Provider/Routes';
 
 const INITIAL_STATE = {
   error: '',
-
   email: '',
   password: '',
 };
 
-class SignUpFormEnhanced extends Component {
+class Controller extends Component {
   constructor(props) {
     super(props);
     this.state = { ...INITIAL_STATE };
-
     this.handleSignUp = this.handleSignUp.bind(this);
   }
 
@@ -27,7 +25,6 @@ class SignUpFormEnhanced extends Component {
     const { history } = this.props;
 
     e.preventDefault();
-
     auth.createUserWithEmailAndPassword(email, password)
       .then(userCred => {
         const userID = userCred.user.uid;
@@ -49,14 +46,12 @@ class SignUpFormEnhanced extends Component {
     const { error, email, password } = this.state;
 
     return (
-      <SignUpForm
+      <View
         error={error}
-
         email={email}
         password={password}
         onEmailChange={e => this.setState({ email: e.target.value })}
         onPasswordChange={e => this.setState({ password: e.target.value })}
-
         handleSignUp={this.handleSignUp}
       />
     );
@@ -64,8 +59,8 @@ class SignUpFormEnhanced extends Component {
 }
 
 /* eslint-disable react/forbid-prop-types */
-SignUpFormEnhanced.propTypes = {
+Controller.propTypes = {
   history: PropTypes.object.isRequired,
 };
 
-export default withRouter(SignUpFormEnhanced);
+export default withRouter(Controller);

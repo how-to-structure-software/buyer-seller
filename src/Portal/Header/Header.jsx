@@ -17,7 +17,7 @@ const Header = ({
 }) => (
   <header className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom box-shadow">
     <Link className="my-0 mr-md-auto link-unstyled" to={LANDING}>
-      <h5 className="text-dark font-weight-normal">How To Structure Software</h5>
+      <h5 className="text-dark font-weight-normal">How To Structure Software (React)</h5>
     </Link>
     <nav className="my-2 my-md-0 mr-md-3">
       { !isSignedIn &&

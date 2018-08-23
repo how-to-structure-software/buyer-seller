@@ -11,7 +11,7 @@ const SignUpForm = ({
 }) => (
   <Form onSubmit={handleSignUp} className="form-centered mt-5">
     <div className="text-center mb-4">
-      <h1 className="h3 mb-5 font-weight-normal">register buyer</h1>
+      <h1 className="h3 mb-5 font-weight-normal">sign up buyer</h1>
     </div>
     <FormGroup>
       <Input
@@ -36,7 +36,7 @@ const SignUpForm = ({
         required
       />
     </FormGroup>
-    <Button className="btn btn-lg btn-primary btn-block" type="submit">register</Button>
+    <Button className="btn btn-lg btn-primary btn-block" type="submit">sign up</Button>
     { error && <Alert className="mt-2" color="secondary">{error}</Alert> }
   </Form>
 );
