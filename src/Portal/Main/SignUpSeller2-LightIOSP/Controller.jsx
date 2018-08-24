@@ -23,7 +23,7 @@ class Controller extends Component {
 
     this.handlePackageSelected = this.handlePackageSelected.bind(this);
     this.handleLoginChosen = this.handleLoginChosen.bind(this);
-    this.handleCheckout = this.handleCheckout.bind(this);
+    this.handleCheckedOut = this.handleCheckedOut.bind(this);
     this.nextStep = this.nextStep.bind(this);
     this.createUser = this.createUser.bind(this);
   }
@@ -41,7 +41,7 @@ class Controller extends Component {
     this.nextStep();
   }
 
-  handleCheckout() {
+  handleCheckedOut() {
     const { email, password } = this.state;
     const { history } = this.props;
     this.createUser(email, password)
@@ -82,9 +82,9 @@ class Controller extends Component {
         price={price}
         email={email}
         password={password}
-        handlePackageSelected={this.handlePackageSelected}
-        handleLoginChosen={this.handleLoginChosen}
-        handleCheckout={this.handleCheckout}
+        onPackageSelected={this.handlePackageSelected}
+        onLoginChosen={this.handleLoginChosen}
+        onCheckedOut={this.handleCheckedOut}
       />
     );
   }

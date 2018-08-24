@@ -34,8 +34,8 @@ class Controller extends Component {
   }
 
   onSuccess() {
-    const { handleCheckout } = this.props;
-    handleCheckout();
+    const { onCheckedOut } = this.props;
+    onCheckedOut();
   }
 
   onCancel() {
@@ -43,7 +43,7 @@ class Controller extends Component {
   }
 
   onError(error) {
-    this.setState({ error: `There has been an error while checking out with Paypal: ${error}` });
+    this.setState({ error: `Paypal-Checkout has been aborted, pleas try again.: ${error}` });
   }
 
   render() {
@@ -77,7 +77,7 @@ class Controller extends Component {
 /* eslint-disable react/forbid-prop-types */
 Controller.propTypes = {
   price: PropTypes.number.isRequired,
-  handleCheckout: PropTypes.func.isRequired,
+  onCheckedOut: PropTypes.func.isRequired,
 
 };
 

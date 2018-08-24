@@ -6,7 +6,6 @@ import { auth } from '../../../../../Provider/Firebase';
 
 const INITIAL_STATE = {
   error: '',
-
   email: '',
   password: '',
 };
@@ -28,7 +27,7 @@ class Controller extends Component {
       .then(result => {
         const alreadyInUse = result.length > 0;
         if (alreadyInUse) {
-          that.setState({ error: 'This email is already inuse. Please choose a different one.' });
+          that.setState({ error: 'This email is already in use. Please choose a different one.' });
         } else {
           onNewUser(email, password);
         }

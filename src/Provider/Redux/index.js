@@ -3,7 +3,7 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 
-import signUpSellerReducer from '../../Portal/Main/SignUpSeller1/Provider/Redux';
+import signUpSellerReducer from '../../Portal/Main/SignUpSeller3-Redux/Provider/Redux';
 
 const store = createStore(
   combineReducers({

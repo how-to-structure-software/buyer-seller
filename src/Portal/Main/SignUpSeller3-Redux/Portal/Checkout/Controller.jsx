@@ -5,7 +5,6 @@ import Checkout from './Checkout';
 
 const INITIAL_STATE = {
   error: '',
-
   couponValue: 0,
   couponCode: '',
 };
@@ -34,8 +33,8 @@ class Controller extends Component {
   }
 
   onSuccess() {
-    const { onCheckout } = this.props;
-    onCheckout();
+    const { handleCheckout } = this.props;
+    handleCheckout();
   }
 
   onCancel() {
@@ -43,7 +42,7 @@ class Controller extends Component {
   }
 
   onError(error) {
-    this.setState({ error: `Paypal-Checkout has been aborted, pleas try again.: ${error}` });
+    this.setState({ error: `There has been an error while checking out with Paypal: ${error}` });
   }
 
   render() {
@@ -77,8 +76,7 @@ class Controller extends Component {
 /* eslint-disable react/forbid-prop-types */
 Controller.propTypes = {
   price: PropTypes.number.isRequired,
-  onCheckout: PropTypes.func.isRequired,
-
+  handleCheckout: PropTypes.func.isRequired,
 };
 
 export default Controller;

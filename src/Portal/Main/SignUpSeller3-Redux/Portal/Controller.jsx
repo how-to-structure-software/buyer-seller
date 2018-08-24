@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import { compose } from 'redux';
 
 // PROVIDER
-// It is recommended to provide mutable data via render props
-// (history object, redux state, firebase state - session)
 import { withRouter } from 'react-router-dom';
 import { withSignUpSellerOperations, withSignUpSellerData } from '../Interior';
 
+// PROJECT files
 import SignUpSeller from './SignUpSeller';
 import { ACCOUNT } from '../../../../Provider/Routes';
 
@@ -67,19 +66,21 @@ class Controller extends Component {
 
 
 Controller.propTypes = {
-  // data - signUpSellerData
+  // data - redux data
   currentStep: PropTypes.oneOf([0, 1, 2]).isRequired,
   price: PropTypes.number.isRequired,
   email: PropTypes.string.isRequired,
   password: PropTypes.string.isRequired,
   error: PropTypes.string.isRequired,
 
-  // operations - signUpSellerOperations
+  // operations - redux action creators
   nextStep: PropTypes.func.isRequired,
   setPrice: PropTypes.func.isRequired,
   setError: PropTypes.func.isRequired,
-  createUser: PropTypes.func.isRequired,
   setEmailPassword: PropTypes.func.isRequired,
+
+  // operations - interior
+  createUser: PropTypes.func.isRequired,
 
   // operations - router
   history: PropTypes.shape().isRequired,
@@ -89,7 +90,5 @@ const enhance = compose(
   withRouter,
   withSignUpSellerData,
   withSignUpSellerOperations,
-  // withSession,
 );
 export default enhance(Controller);
-// export default Controller;

@@ -9,17 +9,17 @@ import Checkout from './Checkout';
 
 const SignUpSeller = ({
   error, currentStep, price, email, password,
-  handlePackageSelected, handleLoginChosen, handleCheckout,
+  onPackageSelected, onLoginChosen, onCheckout,
 }) => (
   <div>
     <Steps current={currentStep}>
-      <Step><ChoosePackage onPackageSelected={handlePackageSelected} /></Step>
-      <Step><ChooseLogin onLoginChosen={handleLoginChosen} /></Step>
+      <Step><ChoosePackage onPackageSelected={onPackageSelected} /></Step>
+      <Step><ChooseLogin onLoginChosen={onLoginChosen} /></Step>
       <Step><Checkout
         price={price}
         email={email}
         password={password}
-        onCheckout={handleCheckout}
+        onCheckout={onCheckout}
       />
       </Step>
     </Steps>
@@ -34,9 +34,9 @@ SignUpSeller.propTypes = {
   price: PropTypes.number.isRequired,
   currentStep: PropTypes.number.isRequired,
 
-  handlePackageSelected: PropTypes.func.isRequired,
-  handleLoginChosen: PropTypes.func.isRequired,
-  handleCheckout: PropTypes.func.isRequired,
+  onPackageSelected: PropTypes.func.isRequired,
+  onLoginChosen: PropTypes.func.isRequired,
+  onCheckout: PropTypes.func.isRequired,
 };
 
 export default SignUpSeller;

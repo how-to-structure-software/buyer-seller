@@ -1,0 +1,212 @@
+.
+├── Footer
+│   └── ...
+├── Header
+│   └── ...
+├── Main
+│   ├── Account
+│   │   ├── Menu
+│   │   └── Page
+│   │       ├── Contract
+│   │       ├── Offer
+│   │       ├── Profile
+│   │       ├── Request
+│   │       └── Watchlist
+│   ├── Landing
+│   ├── SignUpBuyer
+│   ├── SignUpSeller
+│   └── ...
+└── ...
+
+
+
+
+
+
+.
+├── App.css
+├── App.jsx
+├── Footer
+│   ├── Footer.jsx
+│   └── index.js
+├── Header
+│   ├── Header.jsx
+│   ├── HeaderEnhanced.jsx
+│   ├── SignInForm
+│   │   ├── SignInForm.jsx
+│   │   ├── SignInFormEnhanced.jsx
+│   │   ├── index.js
+│   │   └── styles.scss
+│   ├── index.js
+│   └── styles.scss
+├── Main
+│   ├── Account
+│   │   ├── Account.jsx
+│   │   ├── Menu
+│   │   │   └── index.js
+│   │   ├── Page
+│   │   │   ├── Contract
+│   │   │   │   ├── List.jsx
+│   │   │   │   ├── ListEnhanced.jsx
+│   │   │   │   ├── New.jsx
+│   │   │   │   ├── NewEnhanced.jsx
+│   │   │   │   ├── Show.jsx
+│   │   │   │   ├── ShowEnhanced.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Offer
+│   │   │   │   ├── Chat
+│   │   │   │   │   ├── Chat.jsx
+│   │   │   │   │   ├── ChatEnhanced.jsx
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── List.jsx
+│   │   │   │   ├── ListEnhanced.jsx
+│   │   │   │   ├── New.jsx
+│   │   │   │   ├── NewEnhanced.jsx
+│   │   │   │   ├── Preview.jsx
+│   │   │   │   ├── Show.jsx
+│   │   │   │   ├── ShowEnhanced.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Page.jsx
+│   │   │   ├── Profile
+│   │   │   │   ├── Buyer.jsx
+│   │   │   │   ├── PasswordChange
+│   │   │   │   │   ├── PasswordChange.jsx
+│   │   │   │   │   ├── PasswordChangeEnhanced.jsx
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   └── styles.css
+│   │   │   │   ├── Profile.jsx
+│   │   │   │   ├── ProfileEnhanced.jsx
+│   │   │   │   ├── Seller.jsx
+│   │   │   │   ├── SellerProfile
+│   │   │   │   │   ├── SellerProfile.jsx
+│   │   │   │   │   ├── SellerProfileEnhanced.jsx
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── SellerUserData
+│   │   │   │   │   ├── SellerUserData.jsx
+│   │   │   │   │   ├── SellerUserDataEnhanced.jsx
+│   │   │   │   │   └── index.js
+│   │   │   │   └── index.js
+│   │   │   ├── Request
+│   │   │   │   ├── Chat
+│   │   │   │   │   ├── Chat.jsx
+│   │   │   │   │   ├── ChatEnhanced.jsx
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── List.jsx
+│   │   │   │   ├── ListEnhanced.jsx
+│   │   │   │   ├── New.jsx
+│   │   │   │   ├── NewEnhanced.jsx
+│   │   │   │   ├── Preview.jsx
+│   │   │   │   ├── Show.jsx
+│   │   │   │   ├── ShowEnhanced.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Watchlist
+│   │   │   │   ├── Watchlist.jsx
+│   │   │   │   ├── WatchlistEnhanced.jsx
+│   │   │   │   ├── WatchlistPreview.jsx
+│   │   │   │   └── index.js
+│   │   │   └── index.js
+│   │   ├── index.js
+│   │   └── styles.scss
+│   ├── Landing
+│   │   ├── Landing.jsx
+│   │   ├── carouselOld.css
+│   │   ├── carouselOld.jsx
+│   │   ├── index.js
+│   │   └── styles.css
+│   ├── Main.jsx
+│   ├── PasswordForget
+│   │   ├── PasswordForget.jsx
+│   │   ├── PasswordForgetEnhanced.jsx
+│   │   ├── index.js
+│   │   └── styles.css
+│   ├── PublicProfile
+│   │   ├── PublicProfile.jsx
+│   │   ├── PublicProfileEnhanced.jsx
+│   │   ├── index.js
+│   │   └── styles.scss
+│   ├── Search
+│   │   ├── Menu
+│   │   │   └── index.js
+│   │   ├── Search.jsx
+│   │   ├── SearchEnhanced.jsx
+│   │   └── index.js
+│   ├── SignUpBuyer
+│   │   ├── Controller.jsx
+│   │   ├── View.jsx
+│   │   ├── index.js
+│   │   └── styles.css
+│   ├── SignUpSeller1
+│   │   ├── Interior
+│   │   │   ├── Operations.js
+│   │   │   ├── index.jsx
+│   │   │   ├── withSignUpSellerData.jsx
+│   │   │   └── withSignUpSellerOperations.jsx
+│   │   ├── Portal
+│   │   │   ├── Checkout
+│   │   │   │   ├── Checkout.jsx
+│   │   │   │   ├── Controller.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── ChooseLogin
+│   │   │   │   ├── ChooseLogin.jsx
+│   │   │   │   ├── Controller.jsx
+│   │   │   │   ├── index.js
+│   │   │   │   └── styles.css
+│   │   │   ├── ChoosePackage
+│   │   │   │   ├── ChoosePackage.jsx
+│   │   │   │   └── index.js
+│   │   │   ├── Controller.jsx
+│   │   │   ├── SignUpSeller.jsx
+│   │   │   └── index.jsx
+│   │   ├── Provider
+│   │   │   ├── Redux.js
+│   │   │   └── index.js
+│   │   └── index.js
+│   ├── SignUpSeller2
+│   │   ├── Checkout
+│   │   │   ├── Checkout.jsx
+│   │   │   ├── Controller.jsx
+│   │   │   └── index.js
+│   │   ├── ChooseLogin
+│   │   │   ├── ChooseLogin.jsx
+│   │   │   ├── Controller.jsx
+│   │   │   ├── index.js
+│   │   │   └── styles.css
+│   │   ├── ChoosePackage
+│   │   │   ├── ChoosePackage.jsx
+│   │   │   └── index.js
+│   │   ├── Controller.jsx
+│   │   ├── SignUpSeller.jsx
+│   │   └── index.js
+│   ├── SignUpSeller3
+│   │   ├── Checkout
+│   │   │   ├── Checkout.jsx
+│   │   │   ├── Controller.jsx
+│   │   │   └── index.js
+│   │   ├── ChooseLogin
+│   │   │   ├── ChooseLogin.jsx
+│   │   │   ├── Controller.jsx
+│   │   │   ├── index.js
+│   │   │   └── styles.css
+│   │   ├── ChoosePackage
+│   │   │   ├── ChoosePackage.jsx
+│   │   │   ├── Controller.jsx
+│   │   │   └── index.js
+│   │   ├── Dependency.js
+│   │   ├── SignUpSeller.jsx
+│   │   └── index.js
+│   ├── _components
+│   │   └── Menu
+│   │       ├── Menu.jsx
+│   │       ├── MenuEnhanced.js
+│   │       ├── index.js
+│   │       └── styles.scss
+│   └── index.js
+├── _components
+│   ├── PaypalButton
+│   │   └── index.jsx
+│   └── Steps
+│       └── index.jsx
+├── index.js
+└── structure.txt
+
+

@@ -5,16 +5,11 @@ import ChooseLogin from './ChooseLogin';
 import Checkout from './Checkout';
 import Dependency from './Dependency';
 
-//
-// const INITIAL_STATE = {
-//   sharedDependency: new Dependency(),
-// };
 
 class SignUpSeller extends Component {
   constructor(props) {
     super(props);
     this.updateCurrentStep = this.updateCurrentStep.bind(this);
-    // this.state = { ...INITIAL_STATE };
     this.state = {
       current: 0,
       sharedDependency: new Dependency(this.updateCurrentStep),
