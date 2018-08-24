@@ -1,5 +1,10 @@
 # How to structure react apps
 
+
+## Presentation
+
+[How-to-structure-Software-(ReactJS).pdf](documentation/How-to-structure-Software-(ReactJS).pdf)
+
 ## Installation
 
 - `yarn install`
