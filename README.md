@@ -4,7 +4,7 @@
 
 [How-to-structure-Software-(ReactJS).pdf](documentation/How-to-structure-Software-(ReactJS).pdf)
 
-[read more]()
+[read more](documentation/README.md)
 
 ## Setup
 
