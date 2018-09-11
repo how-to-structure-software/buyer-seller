@@ -2,7 +2,11 @@
 
 ## Presentation
 
-[How-to-structure-Software-(ReactJS).pdf](documentation/How-to-structure-Software-(ReactJS).pdf)
+![slide01](documentation/images/slide01.png)
+
+[Link to the original slides](https://slides.com/florianboehmak/deck)
+
+[downolad as PDF](documentation/How-to-structure-Software-(ReactJS).pdf)
 
 [read more](documentation/README.md)
 
